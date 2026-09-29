@@ -29,7 +29,7 @@ This project mirrors the core lifecycle of Machine Learning and Platform Operati
 
 ## 5. Live Web App Link
 
-- **Interactive Web App Demo:** [https://flow-ai-agent.streamlit.app/](https://flow-ai-agent.streamlit.app/) *(Replace with your deployed Streamlit Community Cloud URL)*
+- **Interactive Web App Demo:** https://flow-ai-agent-rk.streamlit.app/
 
 ## 6. Architecture & Pipeline
 

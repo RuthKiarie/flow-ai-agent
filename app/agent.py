@@ -2,7 +2,6 @@ import os
 from langchain_core.tools import tool
 from langchain_core.messages import ToolMessage
 from langchain_openai import ChatOpenAI
-from langchain_ollama import ChatOllama
 from app.rag import get_retriever
 from dotenv import load_dotenv
 
@@ -47,15 +46,10 @@ tools = {
 class FlowAIAgent:
 
   def __init__(self):
-    # Automatically switch between OpenAI Cloud API and Local Ollama
-    if os.getenv("OPENAI_API_KEY"):
-      self.llm = ChatOpenAI(
-          model="gpt-4o-mini", temperature=0
-      ).bind_tools(list(tools.values()))
-    else:
-      self.llm = ChatOllama(model="llama3.1", temperature=0).bind_tools(
-          list(tools.values())
-      )
+    # Initialize OpenAI for cloud production readiness
+    self.llm = ChatOpenAI(model="gpt-4o-mini", temperature=0).bind_tools(
+        list(tools.values())
+    )
 
   def invoke(self, query: str):
     messages = [
