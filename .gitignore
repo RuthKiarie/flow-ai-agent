@@ -1,0 +1,24 @@
+# --- Python & Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv/
+
+# --- Secrets & Environment Variables ---
+.env
+.streamlit/secrets.toml
+
+# --- Vector Databases & Local Storage ---
+chroma_db/
+.chroma/
+
+# --- IDEs & OS Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
