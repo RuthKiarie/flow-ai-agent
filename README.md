@@ -1,4 +1,5 @@
 # FlowAI: Autonomous DevOps Incident Assistant & Cloud RAG Platform
+Live Web App Link - **Interactive Web App Demo:** https://flow-ai-agent-rk.streamlit.app/
 
 ## 1. Overview
 
@@ -27,11 +28,7 @@ This project mirrors the core lifecycle of Machine Learning and Platform Operati
 - **Runbook Documentation Data:** Proprietary simulated enterprise operational data stored under `data/runbooks/` covering database connection pool exhaustions, gateway timeouts (`502 Bad Gateway`) and worker node diagnostics.
 - **Embeddings:** `nomic-embed-text` local embedding model mapping context blocks for vector similarity search.
 
-## 5. Live Web App Link
-
-- **Interactive Web App Demo:** https://flow-ai-agent-rk.streamlit.app/
-
-## 6. Architecture & Pipeline
+## 5. Architecture & Pipeline
 
 The system is built on a modular architecture separating data ingestion, tool registration, agent logic and UI rendering:
 1. **User Query Input:** The user enters an alert or incident symptom via the Streamlit chat interface.
